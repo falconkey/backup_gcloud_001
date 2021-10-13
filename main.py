@@ -162,6 +162,14 @@ def dcss21002_page():
     filepath = workingdir + '/static/pdf_files/tt/'
     return send_from_directory(filepath, 'dcss21002.pdf')
 
+@app.route('/upload_single_file')
+def upload_single_file():
+
+
+
+
+
+
 
 if __name__ == '__main__':
     # This is used when running locally only. When deploying to Google App
