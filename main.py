@@ -1,7 +1,7 @@
 import datetime
 import os
 from flask import Flask, render_template, send_from_directory, request, Response
-import chg_excel_2_pdf # this will be your file name; minus the `.py`
+#import xx # this will be your file name; minus the `.py`
 
 
 
@@ -204,12 +204,6 @@ def file_download(filename):
                 yield chunk
 
     return Response(send_chunk(), content_type='application/octet-stream')
-
-@app.route('/run_transfer')
-def dynamic_page():
-    return chg_excel_2_pdf
-
-
 
 
 
